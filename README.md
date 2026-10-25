@@ -24,14 +24,14 @@ This repository demonstrates a production-ready DevSecOps pipeline built for **N
 
 ## Architecture
 
-\`\`\`
+```
 Developer Push --> GitHub Actions --> Security Scans --> Docker Build --> AWS Deployment
                         |
                         ├── SAST (CodeQL)
                         ├── SCA (Trivy)
                         ├── Secret Scan (Gitleaks)
                         └── IaC Scan (Trivy)
-\`\`\`
+```
 
 ## Security Findings
 
@@ -61,17 +61,13 @@ This project intentionally includes vulnerabilities for educational purposes:
 
 ## Getting Started
 
-\`\`\`bash
+```bash
 # Clone the repository
 git clone https://github.com/kylewalls/DevSecOps-Pipeline-Project.git
 
 # The pipeline runs automatically on push
 # View results in the Actions tab
-\`\`\`
-
-## About This Project
-
-Built as part of the **Cyber Agoge DevSecOps Bootcamp** - training the next generation of security engineers.
+```
 
 ---
 *Note: Vulnerabilities in this project are intentional for educational purposes. Never deploy this code to production.*
